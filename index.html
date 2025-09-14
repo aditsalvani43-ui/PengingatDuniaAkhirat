@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Waktu, Jadwal Sholat & Arah Kiblat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Waktu & Kiblat</h1>
+      <p class="sub">Jam dunia • Tanggal Masehi & Hijri • Jadwal Sholat • Arah Kiblat</p>
+    </header>
+
+    <section class="top-row">
+      <div class="clocks" id="clocks"></div>
+
+      <div class="date-box">
+        <h3>Tanggal</h3>
+        <div id="masehi"></div>
+        <div id="hijri"></div>
+        <button id="refreshLocation">Perbarui Lokasi</button>
+      </div>
+    </section>
+
+    <section class="pray-qibla">
+      <div class="pray">
+        <h3>Jadwal Sholat</h3>
+        <ul id="prayer-times" class="pray-list">
+          <li>Memuat...</li>
+        </ul>
+      </div>
+
+      <div class="qibla">
+        <h3>Arah Kiblat</h3>
+        <div id="compass">
+          <div id="needle">🕋</div>
+        </div>
+        <div id="qibla-info">— ° dari Utara</div>
+        <button id="btnFindQibla">Cari Kiblat</button>
+      </div>
+    </section>
+
+    <footer>
+      <small>Versi edukasi • Perhitungan bersifat perkiraan. InsyaAllah bermanfaat ✨</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
